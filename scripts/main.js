@@ -39,12 +39,12 @@ var villageIcon = L.divIcon({
 
 
 for(var c in cities_raw) {
-    L.marker(cities_raw[c], {icon: cityIcon}).bindPopup(`<b>${c}</b>`).addTo(citiesGroup);
+    L.marker(cities_raw[c], {icon: cityIcon}).bindPopup(`<a href=cities/${c}/index.html><b>${c}</b></a>`).addTo(citiesGroup);
 
 }
 
 for(var v in villages_raw) {
-    L.marker(villages_raw[v], {icon: villageIcon}).bindPopup(`<b>${v}</b>`).addTo(villagesGroup);
+    L.marker(villages_raw[v], {icon: villageIcon}).bindPopup(`<a href=villages/${v}/index.html><b>${v}</b></a>`).addTo(villagesGroup);
 }
 
 

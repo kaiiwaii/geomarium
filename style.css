@@ -1,11 +1,41 @@
 .leaflet-popup-content-wrapper {
+  background-color: #ffffff; /* Fondo blanco */
+  color: #333333; /* Texto en color negro */
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  padding: 2px; /* Espacio interno */
+  border-radius: 10%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
 }
 
-.leaflet-popup-content-wrapper .leaflet-popup-content {
+/* Estilo del título del popup */
+.leaflet-popup-content-wrapper h3 {
+  font-size: 16px;
+  margin: 0 0 5px;
 }
 
-.leaflet-popup-tip-container {
+/* Estilo del contenido del popup */
+.leaflet-popup-content-wrapper p {
+  margin: 0;
 }
+
+/* Estilo del botón de cierre del popup */
+.leaflet-popup-close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #999999;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+/* Estilo del botón de cierre al pasar el cursor */
+.leaflet-popup-close-button:hover {
+  color: #333333;
+}
+
 
 .leaflet-control-scale {
   background-color: #f0f0f0 !important;
