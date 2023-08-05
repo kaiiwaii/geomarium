@@ -1,4 +1,4 @@
-var map = L.map('map').setView([0, 0], 0);
+var map = L.map('map').setView([0, 0], 2);
 const borders = [81.505856, -528.75]
 const borders2 = [-81.505856, 528.75]
 var bounds = L.latLng(borders, borders2)
@@ -6,7 +6,7 @@ var bounds = L.latLng(borders, borders2)
 var tilelayer = L.tileLayer('tiles_nopoints/{z}/{x}/{y}.png', {
 continuousWorld: false,
 noWrap: true,  
-minZoom: 2,
+minZoom: 0,
 maxZoom: 4,
 })
 
