@@ -25,7 +25,6 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: 0 2px 5px rgba(3, 62, 255, 0.2);
 }
 
 /* Modificar el estilo de la lista de capas */
@@ -54,6 +53,51 @@
   background-color: #93b5ff;
   padding: 5px;
   background-image: url(imgs/layer-group-solid.svg);
+}
+
+.language-control {
+  position: relative;
+  display: inline-block;
+  background-color: #93b5ff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 10px;
+  color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  width: 6rem; /* Ajusta el ancho según tu preferencia */
+}
+
+/* Estilo del elemento select */
+.language-control select {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 0;
+  -webkit-appearance: none; /* Elimina el estilo del icono en Chrome */
+  -moz-appearance: none; /* Elimina el estilo del icono en Firefox */
+  appearance: none; /* Elimina el estilo del icono en otros navegadores */
+}
+
+/* Estilo de las opciones del select */
+.language-control select option {
+  background-color: #93b5ff;
+  color: #000;
+}
+
+/* Estilo de la flecha personalizada */
+.language-control::after {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Evita que el usuario interactúe con la flecha */
 }
 
 .village-marker {
