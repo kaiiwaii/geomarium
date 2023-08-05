@@ -1,0 +1,85 @@
+.leaflet-popup-content-wrapper {
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+}
+
+.leaflet-popup-tip-container {
+}
+
+.leaflet-control-scale {
+  background-color: #f0f0f0 !important;
+  border: 1px solid #ccc !important;
+  border-radius: 5px !important;
+  padding: 5px !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Modificar el estilo del texto de la escala */
+.leaflet-control-scale-line {
+  color: #333;
+}
+
+.leaflet-control-layers {
+  background-color: #93b5ff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(3, 62, 255, 0.2);
+}
+
+/* Modificar el estilo de la lista de capas */
+.leaflet-control-layers-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.leaflet-control-layers-list input[type="checkbox"] {
+  /* Cambia el tamaño a los valores que desees */
+  width: 20px;
+  height: 20px;
+}
+
+/* Modificar el estilo de los elementos de la lista */
+.leaflet-control-layers-list label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Modificar el estilo del botón de selección de capa base */
+.leaflet-control-layers-toggle {
+  width: 40px;
+  height: 40px;
+  background-color: #93b5ff;
+  padding: 5px;
+  background-image: url(layer-group-solid.svg);
+}
+
+.village-marker {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+    background-color: rgb(54, 54, 185); /* Puedes cambiar el color del círculo aquí */
+    cursor: pointer; /* Cambia el cursor al pasar por encima para indicar que es interactivo */
+    transition: background-color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+  }
+  
+  /* Estilo para el marcador cuando se pasa el ratón por encima */
+.village-marker:hover {
+    background-color: rgb(92, 92, 190); /* Cambia el color del círculo al pasar el ratón por encima */
+}
+
+.city-marker {
+    min-width: 20px;
+    min-height: 20px;
+    border-radius: 50%; /* Hace que el elemento sea un círculo */
+    background-color: rgb(197, 37, 37); /* Puedes cambiar el color del círculo aquí */
+    cursor: pointer; /* Cambia el cursor al pasar por encima para indicar que es interactivo */
+    transition: background-color 0.3s; /* Agrega una transición para suavizar el cambio de color */
+  }
+  
+  /* Estilo para el marcador cuando se pasa el ratón por encima */
+.city-marker:hover {
+    background-color: rgb(180, 81, 81); /* Cambia el color del círculo al pasar el ratón por encima */
+}
