@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=" https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.js "></script>
+    <link href=" https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.css " rel="stylesheet">
+
     <title>Ashi</title>
     <style>
         body {
@@ -31,11 +34,18 @@
 
         figure {
             text-align: center;
+            cursor: pointer;
+            overflow: hidden;
         }
         figcaption {
             font-size: 14px;
             margin-top: 5px;
             color: #888;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
         }
 
         /* Estilos para hacer la página responsive */
@@ -45,6 +55,7 @@
             }
         }
     </style>
+
 </head>
 <body>
     <h1>Ashi</h1>
@@ -72,10 +83,22 @@
         libre de preocupaciones. Suele ser un destino popular entre los jubilados de Aksor, ya que son los más acostumbrados a vivir en climas
         relativamente fríos, aunque siempre hay alguno que otro que acaba por arrepentirse al cabo de un par de meses y deshace la mudanza.
     </p>
-    <figure>
-        <img src="ashi_satellite.jpg">
-        <figcaption>Imagen generada con StableDiffusion XL</figcaption>
-    </figure>
-    
+    <div class="baguetteBoxOne">
+        <figure>
+            <a href="ashi_satellite.jpg">
+                <img src="ashi_satellite.jpg">
+            </a>
+            <figcaption>Imagen generada con Stable Diffusion XL</figcaption>
+        </figure>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            baguetteBox.run('.baguetteBoxOne', {
+                captions: function(element) {
+                    return element.getElementsByTagName('img')[0].alt;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
