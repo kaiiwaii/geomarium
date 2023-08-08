@@ -1,7 +1,7 @@
 var map = L.map('map').setView([0, 0], 2);
-const borders = [81.505856, -528.75]
-const borders2 = [-81.505856, 528.75]
-var bounds = L.latLng(borders, borders2)
+// const borders = [81.505856, -528.75]
+// const borders2 = [-81.505856, 528.75]
+// var bounds = L.latLng(borders, borders2)
 
 var tilelayer = L.tileLayer('tiles_nopoints/{z}/{x}/{y}.png', {
 continuousWorld: false,
@@ -11,6 +11,23 @@ maxZoom: 4,
 })
 
 tilelayer.addTo(map);
+
+// L.Control.textbox = L.Control.extend({
+//     onAdd: function(map) {
+        
+//     var text = L.DomUtil.create('div');
+//     text.id = "title";
+//     //fix this
+//     text.innerHTML = `<strong style="font-size:3rem">Geomarium</strong>`
+//     return text;
+//     },
+
+//     onRemove: function(map) {
+//         // Nothing to do here
+//     }
+// });
+// L.control.textbox = function(opts) { return new L.Control.textbox(opts);}
+// L.control.textbox({ position: 'topleft' }).addTo(map);
 
 // var marker = L.marker([0, 0], {
 // draggable: true,
