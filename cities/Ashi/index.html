@@ -54,10 +54,44 @@
                 padding: 10px;
             }
         }
+
+        .return-button-container {
+            position: relative;
+            display: inline-block;
+            margin: 10px 0;
+        }
+
+        .return-button {
+            padding: 5px 10px;
+            font-size: 15px;
+            text-decoration: none;
+            color: #333;
+            background-color: #f0f0f0;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        /* Hover effect for the return button */
+        .return-button:hover {
+            background-color: #ccc;
+        }
+
+        /* Responsive styles for the return button */
+        @media screen and (max-width: 768px) {
+            .return-button {
+                padding: 8px 16px;
+                font-size: 16px;
+            }
+        }
     </style>
 
 </head>
 <body>
+    <div class="return-button-container">
+        <a href="/" class="return-button">Return to map</a>
+    </div>
+
     <h1>Ashi</h1>
     <p>
         A pesar de ubicarse en la región más fría de la isla, el contexto geográfico no es especialmente
