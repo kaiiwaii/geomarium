@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: justify;
+}
+h1 {
+    text-align: center;
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+figure {
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+figcaption {
+    font-size: 14px;
+    margin-top: 5px;
+    color: #888;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para hacer la página responsive */
+@media screen and (max-width: 80%) {
+    body {
+        padding: 10px;
+    }
+}
+
+.return-button-container {
+    position: relative;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.return-button {
+    padding: 5px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect for the return button */
+.return-button:hover {
+    background-color: #ccc;
+}
+
+/* Responsive styles for the return button */
+@media screen and (max-width: 768px) {
+    .return-button {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+}

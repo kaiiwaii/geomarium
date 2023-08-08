@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="point_description.css">
+    <script src="scripts/render_description.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.js "></script>
+    <link href="https://cdn.jsdelivr.net/npm/baguettebox.js@1.11.1/dist/baguetteBox.min.css " rel="stylesheet">
+    <title>Point description</title>
+    <script defer>
+        document.addEventListener('DOMContentLoaded', function() {
+            baguetteBox.run('.baguetteBoxOne', {
+                captions: function(element) {
+                    return element.getElementsByTagName('img')[0].alt;
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="return-button-container">
+        <a href="/geomarium" class="return-button">Return to map</a>
+    </div>
+
+    <div id="template"></div>
+</body>
+</html>

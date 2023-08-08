@@ -3,7 +3,7 @@ var map = L.map('map').setView([0, 0], 2);
 // const borders2 = [-81.505856, 528.75]
 // var bounds = L.latLng(borders, borders2)
 
-var tilelayer = L.tileLayer('tiles_nopoints/{z}/{x}/{y}.png', {
+var tilelayer = L.tileLayer('tiles/{z}/{x}/{y}.png', {
 continuousWorld: false,
 noWrap: true,  
 minZoom: 0,
@@ -56,12 +56,12 @@ var villageIcon = L.divIcon({
 
 
 for(var c in cities_raw) {
-    L.marker(cities_raw[c], {icon: cityIcon}).bindPopup(`<a href=cities/${c}/index.html><b>${c}</b></a>`).addTo(citiesGroup);
+    L.marker(cities_raw[c], {icon: cityIcon}).bindPopup(`<a href=description.html?id=${c}><b>${c}</b></a>`).addTo(citiesGroup);
 
 }
 
 for(var v in villages_raw) {
-    L.marker(villages_raw[v], {icon: villageIcon}).bindPopup(`<a href=villages/${v}/index.html><b>${v}</b></a>`).addTo(villagesGroup);
+    L.marker(villages_raw[v], {icon: villageIcon}).bindPopup(`<a href=description.html?id=${c}><b>${c}</b></a>`).addTo(villagesGroup);
 }
 
 
