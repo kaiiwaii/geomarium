@@ -2,9 +2,13 @@ const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
   
 if (id) {
-    console.log(id)
     fetch(`points/${id}.txt`)
-    .then((response) => response.text())
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error("Fetch failed");
+        }
+        return response.text();
+    })
     .then((data) => {
         paragraphs = data.split("\n\n");
         const template = document.getElementById("template");
@@ -23,7 +27,11 @@ if (id) {
         `; 
         loadBaguetteBox();
     })
-    .catch((error) => console.error("Error fetching data:", error));
+    .catch((error) => {
+        const template = document.getElementById("template");
+        template.innerHTML = "<h1>This page isn't finished yet!</h1>";
+        console.error("Error fetching data:", error);
+    });
 }
 
 function loadBaguetteBox() {
