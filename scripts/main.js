@@ -61,7 +61,7 @@ for(var c in cities_raw) {
 }
 
 for(var v in villages_raw) {
-    L.marker(villages_raw[v], {icon: villageIcon}).bindPopup(`<a href=description.html?id=${c}><b>${c}</b></a>`).addTo(villagesGroup);
+    L.marker(villages_raw[v], {icon: villageIcon}).bindPopup(`<a href=description.html?id=${v}><b>${v}</b></a>`).addTo(villagesGroup);
 }
 
 
