@@ -30,11 +30,11 @@ if (id) {
     })
     .catch((error) => {
         const template = document.getElementById("template");
-        template.innerHTML = "<h1>¡Esta página todavía no está acabada!</h1>";
+        template.innerHTML = "<h1>Esta página todavía no está acabada o no existe</h1>";
     });
 } else {
     const template = document.getElementById("template");
-    template.innerHTML = "<h1>¡Enlace equivocado! Vuelve el mapa y elige mejor tu destino</h1>";
+    template.innerHTML = "<h1>¡Enlace equivocado! ¿Has considerado volver al mapa y elegir un destino más adecuado?</h1>";
 }
 
 function loadBaguetteBox() {
