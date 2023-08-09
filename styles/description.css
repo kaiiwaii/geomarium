@@ -67,6 +67,22 @@ img {
     background-color: #ccc;
 }
 
+.fullimage-button-container {
+    text-align: center;
+}
+  
+.fullimage-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
 /* Responsive styles for the return button */
 @media screen and (max-width: 768px) {
     .return-button {

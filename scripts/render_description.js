@@ -22,8 +22,15 @@ if (id) {
                 <a href="images/${id}.png">
                     <img src="images/${id}.png">
                 </a>
-                <figcaption>Imagen generada con Stable Diffusion XL</figcaption>
+                <figcaption style="padding-bottom: 0.5rem;">
+                    Imagen generada con Stable Diffusion XL
+                </figcaption>
             </figure>
+        </div>
+        <div class="fullimage-button-container">
+            <a class="fullimage-button" href=/geomarium/images/2x/${id}2x.png>
+                Ver con resolución completa
+            </a>
         </div>
         `; 
         loadBaguetteBox();
@@ -42,6 +49,7 @@ function loadBaguetteBox() {
         captions: function(element) {
             console.log("baguette");
             return element.getElementsByTagName('img')[0].alt;
-        }
+        },
+        fullscreen: true
     });
 }
