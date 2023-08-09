@@ -10,6 +10,7 @@ if (id) {
         return response.text();
     })
     .then((data) => {
+        document.title = id;
         paragraphs = data.split("\n\n");
         const template = document.getElementById("template");
         template.innerHTML = 
